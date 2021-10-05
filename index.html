@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title></title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="Acces-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = " https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "> </script >
+	<script type= "text/javascript" src="script.js"> </script>
+    <title>API AUDITORIO</title>
+</head>
+<body>
+     <h2> API AUDITORIO</h2>
+     <input type="number" id="miId" placeholder="ID">
+     <input type="text" id="owner" placeholder="Propietario">
+     <input type="number" id="capacity" placeholder="Capacidad">
+     <input type="number" id="category" placeholder="Id Categoría">
+     <input type="text" id="name" placeholder="Nombre">
+
+     <button onclick= " registro ()"> Guardar </button>
+	 <button onclick= " obtenerItems ()"> Ver </button>	
+	 <button onclick= " actualizar ()"> Editar </button >
+
+	 <div>
+        <table >
+        <tbody id= "miResultado">
+        </tbody>
+        </table>
+     </div>
+     <h2> API CLIENTE</h2>
+     <input type="number" id="miId2" placeholder="iD">
+     <input type="text" id="name2" placeholder="Nombre">
+     <input type="text" id="email2" placeholder="email">
+     <input type="number" id="age2" placeholder="Edad">
+     
+     <button onclick= " registro2 ()"> Guardar </button>
+	 <button onclick= " obtenerItems2 ()"> Ver </button>	
+	 <button onclick= " actualizar2 ()"> Editar </button >
+
+	 <div>
+        <table >
+        <tbody id= "miResultado2">
+        </tbody>
+        </table>
+     </div>
+     <h2> API MENSAJES</h2>
+     <input type="number" id="miId3" placeholder="ID" size=20>
+     <p></p>     
+     <textarea rows=4 cols=70 placeholder="Mensaje" id="message3"></textarea>     
+     
+     <button onclick= " registro3 ()"> Guardar </button>
+	 <button onclick= " obtenerItems3 ()"> Ver </button>	
+	 <button onclick= " actualizar3 ()"> Editar </button >
+
+	 <div>
+        <table >
+        <tbody id= "miResultado3">
+        </tbody>
+        </table>
+     </div>
+</body>
+</html>
